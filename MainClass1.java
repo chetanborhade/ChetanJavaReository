@@ -1,18 +1,34 @@
-class central1
+class Projector
 {
-	static int k = 12;
+	// State of an object
 	
-	static void test()
+	double price = 5000;
+	String company = "EPSON";
+	String color = "WHITE";
+	String mode = "EP-501";
+	String type = "Electronic";
+	
+	// Behaviour of anf object
+	
+	void displayPicture()
 	{
-		System.out.println("TEST METHOD");
+		System.out.println("DISPLAY PICTURE");
+	}
+	void Settings()
+	{
+		System.out.println("SETTINGS");
 	}
 }
 class MainClass1
 {
 	public static void main(String[] args)
 	{
-		System.out.println("Main Method");
-		System.out.println("K Value is: " +central1.k);
-		central1.test();
+	Projector p1 = new Projector();
+	
+	System.out.println("PRICE OF PROJECTOR IS: "+p1.price);
+	System.out.println("COMPANY OF PROJECTOR IS: "+p1.company);
+	
+	p1.displayPicture();
+	p1.Settings();
 	}
 }
