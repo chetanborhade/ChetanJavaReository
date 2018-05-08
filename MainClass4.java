@@ -1,24 +1,25 @@
-// Non Static multiple copies
-
-class Demo1
-{
-	void info()
-	{
-		System.out.println("INFO METHOD");
-	}
-}
-
 class MainClass4
 {
+	static int k=12;
+	double d = 33.66;
+	
+	static void test()
+	{
+		System.out.println("TEST METHOD");
+	}
+	void display()
+	{
+		System.out.println("DISPLAY METHOD");
+		
+	}
 	public static void main(String[] args)
 	{
-		Demo1 d1 = new Demo1();
-		d1.info();
-		
-		Demo1 d2 = new Demo1();
-		d2.info();
-		
-		System.out.println("D1 Value is: "+d1);
-		System.out.println("D2 Value is: "+d2);
+		System.out.println("K VALUE IS: "+k);
+		test();
+		MainClass4 m4 = new MainClass4();
+		System.out.println("D VALUE IS: " +m4.d);
+		m4.display();
+	
 	}
+	
 }

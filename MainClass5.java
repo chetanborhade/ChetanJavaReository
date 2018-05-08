@@ -1,18 +1,20 @@
-class Demo1
+class Central1
 {
-	int k = 12;
+	int j=33;
+	static double p=22.53;
 }
-
 class MainClass5
 {
+	static void test()
+	{
+		System.out.println("TEST METHOD");
+	}
 	public static void main(String[] args)
 	{
-		Demo1 d1 = new Demo1();
-		d1.k = 33;
-		System.out.println("K VALUE IS: " +d1.k);
-		
-		Demo1 d2 = new Demo1();
-		System.out.println("K VALUE IS: " +d2.k);
-	}
-	
-}
+		System.out.println("MAIN METHOD");
+		test();
+		Central1 c1 = new Central1();
+		System.out.println(" J VALUE IS: "+c1.j);
+	}	
+}	
+
